@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            body {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 17pt;
+                background-color: crimson;
+                color: azure;
+            }
+    </style>
+</head>
+<body>   
+    <h1>Hello World!</h1>
+    
+    <script>
+            var nome = window.prompt("Qual o seu nome?")
+            document.writeln(`Olá ${nome}, seu nome tem ${nome.length} letras! </br> </br>`)
+            document.write(`Seu nome em maiúsculas --> ${nome.toUpperCase()} </br>`)
+            document.write(`Seu nome em minúsculas --> ${nome.toLowerCase()}</br>`)
+
+            var salario = Number(window.prompt(`Qual o seu salário, ${nome}?`))
+
+            document.write(`Nossa você ganha ${salario.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})} ???. Quanto dinheiro pra uma pessoa só em...`)  // Nesse script ele faz uma formatação do salário já em formato de moeda, monetário. 
+
+    </script>
+</body>
+</html>
