@@ -1,0 +1,6 @@
+n = 1
+x = 1
+
+do {
+    console.log(`Olá senhor ${x}`)
+} while (x <= 10);
